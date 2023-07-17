@@ -1,2 +1,1 @@
-# my-portfolio
-Portfolio site showcasing work experience
+This is a portfolio showcasing my work experience
