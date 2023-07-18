@@ -1,9 +1,13 @@
-import Image from 'next/image'
+import MyTimeLine from "./../components/MyTimeLine"
+import Hero from "./../components/Hero"
+
+
 
 export default function Home() {
   return (
     <>
-    <h1 className="text-4xl text-center">Hey 👋</h1>
+    <Hero/>
+    <MyTimeLine/>
     </>
   )
 }
