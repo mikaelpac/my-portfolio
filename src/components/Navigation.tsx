@@ -3,7 +3,8 @@ import {AiFillHome} from "react-icons/ai"
 
 const Navigation = () => {
   return (
-    <nav className="flex items-center justify-between p-4 bg-indigo-950 text-white pl-8 pr-8">
+    <div className="sticky top-0 z-10">
+    <nav className="flex items-center justify-between p-4 bg-white text-black md:pl-8 md:pr-8">
       <div>
         <Link  legacyBehavior href="/">
           <a className="hover:text-yellow-500 transition-colors ease-in-out items-center ml-2 flex gap-3" ><AiFillHome size={32}/> Home </a>
@@ -24,6 +25,7 @@ const Navigation = () => {
         </li>
       </ul>
     </nav>
+    </div>
   );
 };
 

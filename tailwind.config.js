@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        dpurple: "#246A73",
+        ash: "#cdd1c4",
+        saffron: "#e8c547",
+        jet: "#30323d"
+      },
       keyframes: {
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },

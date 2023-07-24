@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Navigation />
-      <body className={`${inter.className} bg-indigo-950 text-slate-100 mx-auto`}>{children}</body>
+      <body className={`${inter.className} bg-slate-900 text-white`}>{children}</body>
       <Footer />
     </>
   );
