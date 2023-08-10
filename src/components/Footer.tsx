@@ -5,7 +5,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="bg-orange-300 p-6 text-black p-4">
+    <footer className="dark:bg-black bg-blue-950 py-8 px-6 text-white p-4">
        <div className="flex justify-center gap-6 mb-4">
       <Link href="https://www.linkedin.com/in/mikael-paczkowski-4550a2132/">
           <BsLinkedin size={24} />

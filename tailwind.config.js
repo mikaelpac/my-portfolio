@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,10 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dpurple: "#246A73",
-        ash: "#cdd1c4",
-        saffron: "#e8c547",
-        jet: "#30323d"
+        lavender: "#D6D3F0",
+        prussian: "#0B3142",
+        midnight: "#0F5257",
+        thistle: "#C6B9CD"
+      },
+      backgroundImage: {
+        'background' : "url(/sunset.jpg)", 
       },
       keyframes: {
         wave: {

@@ -6,7 +6,9 @@ import digikuitti from './../../public/images/digikuitti.png'
 
 const MyTimeline = () => {
   return (
-    <div className="container p-4 md:p-10 mx-auto" id="experience" >
+    <div className="bg-white dark:bg-slate-950 text-black dark:text-white p-4 md:p-10 mx-auto" id="experience" >
+      <div className="max-w-5xl m-auto  rounded-md p-3">
+      <h2 className="text-center text-4xl mb-10">Experience</h2>
       <TimelineItem
         title="Hot Rad TV"
         description="I've had the privilege to work at Hot Rad TV (a heavy music livestreaming site) as a lead Full Stack Developer, taking on the responsibility of overhauling the site's UI, creating checkout flows and so much more. At Hot Rad I learned how to manage all the systems pertaining to a larger project and independently solve challenges, be it on the front- or the backend."
@@ -28,6 +30,7 @@ const MyTimeline = () => {
         duration="2020 Q2 - 2020 Q4"
         reverse={true}
       />
+    </div>
     </div>
   );
 };
