@@ -78,11 +78,11 @@ function Navigation({ colorTheme, setTheme }) {
         <ul className="flex items-center space-x-4">
           <li>
             <a href="#about">
-              <button className="hover:text-yellow-500 ml-5 mr-3">About</button>
+              <button className="hover:text-yellow-500 ml-5 mr-3 select-none">About</button>
             </a>
           </li>
           <li>
-            <button className=" bg-yellow-500 hover:bg-white-700 font-bold text-black py-2 px-4 rounded  transform transition duration-300 hover:scale-110">
+            <button className=" bg-yellow-500 hover:bg-white-700 font-bold text-black py-2 px-4 rounded  transform transition duration-300 hover:scale-110 select-none">
               <a href="#contact">
                 Connect
               </a>

@@ -9,8 +9,8 @@ import Link from "next/link";
 
 const HeroNav = () => {
   return (
-<section className="bg-scroll  bg-gradient-to-br from-indigo-500 to-blue-500 dark:bg-gradient-to-br dark:from-slate-950 dark:to-indigo-950" id="hero" style={{marginTop: "-80px"}} >
-	<div className="container flex flex-col justify-center px-8 py-16 mx-auto sm:py-18 lg:py-32 lg:flex-row lg:justify-between items-center max-w-6xl">
+<section className="bg-scroll bg-gradient-to-br from-indigo-500 to-blue-500 dark:bg-gradient-to-br dark:from-slate-950 dark:to-indigo-950" id="hero" style={{marginTop: "-80px"}} >
+	<div className="container flex min-h-screen flex-col justify-center px-8 py-16 mx-auto sm:py-18 lg:py-32 lg:flex-row lg:justify-between items-center max-w-6xl">
 		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 			<h1 className="text-4xl text-white dark:text-white font-bold leading sm:text-4xl">Hey <span className="wave">👋</span> <br/>  I&apos;m Mikael, <br/>
 				<span className=" text-yellow-500">a Full Stack Developer</span>

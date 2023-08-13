@@ -30,7 +30,6 @@ const MyTimeline = () => {
         duration="2020 Q2 - 2020 Q4"
         reverse={true}
       />
-      
     </div>
     </div>
   );

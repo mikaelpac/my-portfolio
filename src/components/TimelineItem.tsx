@@ -38,7 +38,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       </div>
       {title !== "AO Solutions Oy" && <hr className="h-px border-0 my-10 bg-gray-500 dark:bg-pink-500 dark:opacity-50"></hr>} 
       {/* TODO: Use last child selector instead */}
-      <div className="absolute left-1/2 w-px md:h-full dark:bg-pink-500 bg-gray-500 dark:opacity-50 transform -translate-x-1/2 dark:shadow-pink-500/30"></div>
+      <div className="absolute left-1/2 md:h-full w-px dark:bg-pink-500 bg-gray-500 dark:opacity-50 transform -translate-x-1/2 dark:shadow-pink-500/30"></div>
     </div>
   );
 };

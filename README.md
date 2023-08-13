@@ -1,1 +1,1 @@
-This is a portfolio showcasing my work experience
+This is a portfolio site showcasing my work experience
