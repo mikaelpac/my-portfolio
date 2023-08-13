@@ -5,6 +5,7 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './public/images/*{jpg,png}',
   ],
   theme: {
     extend: {
@@ -14,9 +15,9 @@ module.exports = {
         midnight: "#0F5257",
         thistle: "#C6B9CD"
       },
-      backgroundImage: {
-        'background' : "url(/sunset.jpg)", 
-      },
+      /* backgroundImage: {
+        "about": "url('./public/images/rocks.jpg')",
+      }, */
       keyframes: {
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },

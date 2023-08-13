@@ -33,11 +33,12 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           layout="responsive"
           width={400}
           max-height={400}
-          className="rounded-md px-4 object-contain transition ease-in-out md:hover:scale-103 transform "
+          className="rounded-md px-4 py-2 object-contain transition ease-in-out md:hover:scale-103 transform "
         />
       </div>
-      <hr className="h-px border-0 my-10 bg-gray-500 last:hidden"></hr>
-      <div className="absolute left-1/2 w-px md:h-full bg-gray-500 transform -translate-x-1/2 "></div>
+      {title !== "AO Solutions Oy" && <hr className="h-px border-0 my-10 bg-gray-500 dark:bg-pink-500 dark:opacity-50"></hr>} 
+      {/* TODO: Use last child selector instead */}
+      <div className="absolute left-1/2 w-px md:h-full dark:bg-pink-500 bg-gray-500 dark:opacity-50 transform -translate-x-1/2 dark:shadow-pink-500/30"></div>
     </div>
   );
 };

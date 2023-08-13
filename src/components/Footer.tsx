@@ -17,6 +17,7 @@ const Footer = () => {
     <p className="text-sm text-center">
       &copy; {new Date().getFullYear()} Mikael Paczkowski. All rights reserved.
     </p>
+
    
   </footer>
   );

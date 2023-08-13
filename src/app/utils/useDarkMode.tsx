@@ -7,9 +7,6 @@ function useDarkMode() {
   const colorTheme = theme === "dark" ? "light" : "dark";
 
   useEffect(() => {
-    console.log("theme clicked")
-    const root = window.document.documentElement;
-
     document.body.classList.remove(colorTheme);
     document.body.classList.add(theme);
 

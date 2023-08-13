@@ -4,9 +4,7 @@ import React, { ReactNode, useState, useEffect } from "react";
 import {AiFillHome} from "react-icons/ai"
 import useDarkMode from "@/app/utils/useDarkMode";
 
-const Navigation = () => {
-
-  const [colorTheme, setTheme] = useDarkMode();
+function Navigation({ colorTheme, setTheme }) {
 
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
 
@@ -21,81 +19,79 @@ const Navigation = () => {
     };
   }, []);
 
-const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
-const [padding, setPadding] = useState(30);
-const [boxShadow, setBoxShadow] = useState(0);
+  const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
+  const [padding, setPadding] = useState(30);
+  const [boxShadow, setBoxShadow] = useState(0);
 
 
-useEffect(() => {
-  let backgroundTransparacyVar = clientWindowHeight / 600;
+  useEffect(() => {
+    let backgroundTransparacyVar = clientWindowHeight / 600;
 
-  if (backgroundTransparacyVar < 1) {
+    if (backgroundTransparacyVar < 1) {
       let paddingVar = 30 - backgroundTransparacyVar * 20;
       let boxShadowVar = backgroundTransparacyVar * 0.1;
       setBackgroundTransparacy(backgroundTransparacyVar);
       setPadding(paddingVar);
       setBoxShadow(boxShadowVar);
-  }
-}, [clientWindowHeight]);
+    }
+  }, [clientWindowHeight]);
 
 
   return (
-    <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-md" style={{background: `rgba(0, 0, 0, ${backgroundTransparacy})`}}>
-    <nav className="flex items-center justify-between text-white dark:text-white lg:pl-8 md:pr-8">
-      <div>
-      {colorTheme === "light" ? (
-  <svg
-    onClick={() => setTheme("light")}
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 cursor-pointer"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      className="bulb"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-    />
-  </svg>
-) : (
-  <svg
-    onClick={() => setTheme("dark")}
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6 cursor-pointer"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      className="moon"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-    />
-  </svg>
-)}
-      </div>
-      <ul className="flex items-center space-x-4 ">
-        <li>
-          <a href="#about" >
-            <button className="hover:text-orange-600 ml-5 mr-3">About</button>
-          </a>
-        </li>
-        <li>
-            <button className=" bg-yellow-500 hover:bg-white-700 font-bold transition text-black py-2 px-4 rounded">
-          <a href="#contact" >
-         Connect
-          </a>
-          </button>
-        </li>
-      </ul>
-    </nav>
+    <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-md" style={{ background: `rgba(0, 0, 0, ${backgroundTransparacy})` }}>
+      <nav className="flex items-center justify-between text-white dark:text-white lg:pl-8 md:pr-8">
+        <div>
+          {colorTheme === "light" ? (
+            <svg
+              onClick={() => setTheme("light")}
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 cursor-pointer  transform transition duration-300 hover:scale-110"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                className="bulb "
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          ) : (
+            <svg
+              onClick={() => setTheme("dark")}
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 cursor-pointer  transform transition duration-300 hover:scale-110"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                className="moon"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          )}
+        </div>
+        <ul className="flex items-center space-x-4">
+          <li>
+            <a href="#about">
+              <button className="hover:text-yellow-500 ml-5 mr-3">About</button>
+            </a>
+          </li>
+          <li>
+            <button className=" bg-yellow-500 hover:bg-white-700 font-bold text-black py-2 px-4 rounded  transform transition duration-300 hover:scale-110">
+              <a href="#contact">
+                Connect
+              </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
-};
+}
 
 export default Navigation;

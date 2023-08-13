@@ -1,18 +1,21 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
 
 interface ContactFormProps {
   onSubmit: (data: ContactFormData) => void;
 }
 
 interface ContactFormData {
-  topic: string;
+  name: string;
   email: string;
   message: string;
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
+    const [state, handleSubmit] = useForm("mbjvgybz");
+
   const [formData, setFormData] = useState<ContactFormData>({
-    topic: "",
+    name: "",
     email: "",
     message: "",
   });
@@ -22,24 +25,24 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+ /*  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSubmit(formData);
-  };
+  }; */
 
   return (
     <form onSubmit={handleSubmit} className="w-full md:p-6 mx-6 max-w-xl p-4 rounded-lg dark:text-white bg-slate-100 dark:bg-slate-950  file:rounded-lg shadow-md">
       <div className="">
         <label htmlFor="topic" className="block mb-2 font-semibold ">
-          Topic
+            Name
         </label>
         <input
           type="text"
-          id="topic"
-          name="topic"
-          value={formData.topic}
+          id="name"
+          name="name"
+          value={formData.name}
           onChange={handleChange}
-          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring focus:border-blue-300"
           required
         />
       </div>
@@ -53,9 +56,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring focus:border-blue-300"
           required
         />
+         <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
       </div>
       <div className="mb-4">
         <label htmlFor="message" className="block mb-2 font-semibold ">
@@ -66,13 +74,19 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-3 py-2 border rounded-md resize-none focus:outline-none focus:ring focus:border-blue-300"
-          rows={4}
+          className="w-full px-3 py-2 border text-black rounded-md resize-none focus:outline-none focus:ring focus:border-blue-300"
+          rows={6}
           required
         />
+          <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
       </div>
       <button
         type="submit"
+        disabled={state.submitting}
         className="w-full py-2 text-black font-bold  bg-yellow-500 rounded-md focus:outline-none focus:ring focus:border-blue-300"
       >
         Send

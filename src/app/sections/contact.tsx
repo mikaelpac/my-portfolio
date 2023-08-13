@@ -9,8 +9,11 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="flex dark:bg-indigo-950 bg-slate-200 md:py-24 py-12 items-center justify-center" id="contact">
+    <div className="dark:bg-indigo-950 bg-slate-200 md:py-12 py-12" id="contact">
+      <h2 className="text-center dark:text-white text-black text-4xl mb-10 ">Get in touch</h2>
+    <div className="flex items-center justify-center" >
       <ContactForm onSubmit={handleSubmit} />
+    </div>
     </div>
   );
 };
