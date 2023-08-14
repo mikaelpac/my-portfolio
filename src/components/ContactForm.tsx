@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from '@formspree/react';
+import toast, { Toaster } from 'react-hot-toast';
 
 interface ContactFormProps {
   onSubmit: (data: ContactFormData) => void;
@@ -14,6 +15,28 @@ interface ContactFormData {
 const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     const [state, handleSubmit] = useForm("mbjvgybz");
 
+    console.log(state)
+
+ useEffect(() => {
+      if(state.succeeded) {
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        })
+        notifySuccess()
+      }
+      if(!state.succeeded && state.errors) {
+        notifyError()
+      }
+   }, [state.succeeded, state.errors])
+
+
+
+  const notifySuccess = () => toast('✅ Message sent');
+  //TODO: Could get a more accurate error message from state.errors obj
+  const notifyError = () => toast('❌ Something went wrong');
+
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
@@ -25,13 +48,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
- /*  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    onSubmit(formData);
-  }; */
-
   return (
-    <form onSubmit={handleSubmit} className="w-full md:p-6 mx-6 max-w-xl p-4 rounded-lg dark:text-white bg-slate-100 dark:bg-slate-950  file:rounded-lg shadow-md">
+    <form  onSubmit={handleSubmit} className="w-full md:p-6 mx-6 max-w-xl p-4 rounded-lg dark:text-white bg-slate-100 dark:bg-slate-950  file:rounded-lg shadow-md">
       <div className="">
         <label htmlFor="topic" className="block mb-2 font-semibold ">
             Name
@@ -91,6 +109,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
       >
         Send
       </button>
+      <Toaster />
     </form>
   );
 };
