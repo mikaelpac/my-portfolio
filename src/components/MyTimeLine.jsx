@@ -1,6 +1,6 @@
 import TimelineItem from "./TimelineItem";
-import hotrad from './../../public/images/hotrad.png'
-import blufvpn from './../../public/images/blufvpn.png'
+import hotrad3 from './../../public/images/hotrad3.png'
+import blufvpn2 from './../../public/images/blufvpn2.png'
 import digikuitti from './../../public/images/digikuitti.png'
 
 
@@ -12,14 +12,14 @@ const MyTimeline = () => {
       <TimelineItem
         title="Hot Rad TV"
         description="I've had the privilege to work at Hot Rad TV (a heavy music livestreaming site) as a lead Full Stack Developer, taking on the responsibility of overhauling the site's UI, creating checkout flows and so much more. At Hot Rad I learned how to manage all the systems pertaining to a larger project and independently solve challenges, be it on the front- or the backend."
-        image={hotrad}
+        image={hotrad3}
         duration="2022 Q2 - 2023 Q2"
         reverse={true}
       />
       <TimelineItem
         title="BLUF VPN"
         description="At BLUF VPN, in addition to React-based front-end development, I got the chance to dip my toes into the backend, utilizing NodeJS, GraphQL and PostgreSQL to create endpoints and complete various tasks. I also got very used to working in a team which embraced agile workflows."
-        image={blufvpn}
+        image={blufvpn2}
         duration="2021 Q2 - 2022 Q2"
         reverse={false}
       />

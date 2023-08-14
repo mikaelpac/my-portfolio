@@ -20,8 +20,6 @@ const Footer = () => {
     <p className="text-sm text-center mt-2">
       Made with ❤️ using Next.js, styled with tailwindcss.
     </p>
-
-   
   </footer>
   );
 };

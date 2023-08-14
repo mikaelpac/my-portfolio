@@ -17,11 +17,13 @@ const HeroNav = () => {
 			</h1>
 			<h1 className="text-4xl text-white dark:text-white font-bold leading sm:text-4xl mb-4">living in Tampere</h1>
 			<div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-				<a href="#experience" className=""><button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-semibold text-gray-900 rounded-lg shadow-lg dark:shadow-pink-500/30 group bg-gradient-to-br dark:from-purple-600 dark:to-pink-500 group-hover:from-purple-600 dark:group-hover:to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-  <span className="relative px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md dark:group-hover:bg-opacity-0">
-	My Experience
-  </span>
-</button></a>
+				<a href="#experience" className="">
+				<button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-semibold text-gray-900 rounded-lg shadow-lg dark:shadow-pink-500/30 group bg-gradient-to-br dark:from-purple-600 dark:to-pink-500 group-hover:from-purple-600 dark:group-hover:to-blue-500 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+					<span className="relative px-5 py-2.5 transition-all ease-in duration-200 bg-white dark:bg-gray-900 rounded-md dark:group-hover:bg-opacity-0">
+						My Experience
+					</span>
+				</button>
+				</a>
 			</div>
 		</div>
 		<div className="flex md:items-center rounded-sm justify-center max-w-sm ">

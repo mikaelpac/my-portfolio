@@ -15,8 +15,6 @@ interface ContactFormData {
 const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     const [state, handleSubmit] = useForm("mbjvgybz");
 
-    console.log(state)
-
  useEffect(() => {
       if(state.succeeded) {
         setFormData({
@@ -26,15 +24,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
         })
         notifySuccess()
       }
-      if(!state.succeeded && state.errors) {
-        notifyError()
-      }
+      if(!state.succeeded && state.errors) notifyError()
    }, [state.succeeded, state.errors])
 
 
-
-  const notifySuccess = () => toast('✅ Message sent');
   //TODO: Could get a more accurate error message from state.errors obj
+  const notifySuccess = () => toast('✅ Message sent');
   const notifyError = () => toast('❌ Something went wrong');
 
   const [formData, setFormData] = useState<ContactFormData>({
