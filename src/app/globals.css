@@ -16,6 +16,11 @@
   fill: #EBC815
 }
 
+/* This is needed because sticky nav goes on top of content in anchor links */
+section, div {
+  scroll-margin-top: 3.5em;
+}
+
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */

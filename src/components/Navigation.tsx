@@ -19,18 +19,18 @@ function Navigation({ colorTheme, setTheme }) {
     };
   }, []);
 
-  const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
+  const [backgroundtransparency, setBackgroundtransparency] = useState(0);
   const [padding, setPadding] = useState(30);
   const [boxShadow, setBoxShadow] = useState(0);
 
 
   useEffect(() => {
-    let backgroundTransparacyVar = clientWindowHeight / 600;
+    let backgroundtransparencyVar = clientWindowHeight / 600;
 
-    if (backgroundTransparacyVar < 1) {
-      let paddingVar = 30 - backgroundTransparacyVar * 20;
-      let boxShadowVar = backgroundTransparacyVar * 0.1;
-      setBackgroundTransparacy(backgroundTransparacyVar);
+    if (backgroundtransparencyVar < 1) {
+      let paddingVar = 30 - backgroundtransparencyVar * 20;
+      let boxShadowVar = backgroundtransparencyVar * 0.1;
+      setBackgroundtransparency(backgroundtransparencyVar);
       setPadding(paddingVar);
       setBoxShadow(boxShadowVar);
     }
@@ -38,7 +38,7 @@ function Navigation({ colorTheme, setTheme }) {
 
 
   return (
-    <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-sm" style={{ background: `rgba(0, 0, 0, ${backgroundTransparacy})` }}>
+    <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-sm" style={{ background: `rgba(0, 0, 0, ${backgroundtransparency})` }}>
       <nav className="flex items-center justify-between text-white dark:text-white lg:pl-8 md:pr-8">
         <div>
           {colorTheme === "light" ? (
