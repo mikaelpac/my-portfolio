@@ -38,7 +38,7 @@ function Navigation({ colorTheme, setTheme }) {
 
 
   return (
-    <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-md" style={{ background: `rgba(0, 0, 0, ${backgroundTransparacy})` }}>
+    <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-sm" style={{ background: `rgba(0, 0, 0, ${backgroundTransparacy})` }}>
       <nav className="flex items-center justify-between text-white dark:text-white lg:pl-8 md:pr-8">
         <div>
           {colorTheme === "light" ? (

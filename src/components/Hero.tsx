@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import hotrad from './../../public/images/hotrad.png'
-import me2 from './../../public/images/me2.jpg'
+import me from './../../public/images/me.jpg'
 import Link from "next/link";
 
 
@@ -28,7 +28,7 @@ const HeroNav = () => {
 		</div>
 		<div className="flex md:items-center rounded-sm justify-center max-w-sm ">
     <Image
-          src={me2}
+          src={me}
           alt="A Photo of me"
           layout="responsive"
           className="w-auto rounded-xl shadow-2xl"
