@@ -1,5 +1,5 @@
 import TimelineItem from "./TimelineItem";
-import hotrad3 from './../../public/images/hotrad3.png'
+import hotrad from './../../public/images/hotrad.png'
 import blufvpn2 from './../../public/images/blufvpn2.png'
 import appscreen from './../../public/images/appscreen.png'
 
@@ -12,7 +12,7 @@ const MyTimeline = () => {
       <TimelineItem
         title="Hot Rad TV"
         description="At Hot Rad TV (a heavy music livestreaming site) I had the role of a Full Stack Developer, taking on the responsibility of overhauling the site's UI, creating checkout flows and more. At Hot Rad I learned how to manage all the systems pertaining to a larger project and independently solve challenges, be it on the front- or the backend."
-        image={hotrad3}
+        image={hotrad}
         duration="2022 Q2 - 2023 Q2"
         reverse={true}
       />

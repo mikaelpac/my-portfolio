@@ -24,7 +24,7 @@ const Layout = ({ children }: LayoutProps) => {
     }
 
   return (
-    <html lang="en">
+    <html lang="en" title='Mikael Paczkowski'>
       <body className="">{children}</body>
     </html>
   );
