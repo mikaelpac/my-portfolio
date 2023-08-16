@@ -1,9 +1,7 @@
 'use client'
 import './globals.css'
-import type { Metadata } from 'next'
 import React, { ReactNode } from "react";
-import Navigation from "./../components/Navigation";
-import Footer from "./../components/Footer";
+import Head from 'next/head'
 
 
 interface LayoutProps {
@@ -24,7 +22,10 @@ const Layout = ({ children }: LayoutProps) => {
     }
 
   return (
-    <html lang="en" title='Mikael Paczkowski'>
+    <html lang="en">
+     <Head>
+        <title>Mikael Paczkowski</title>
+      </Head>
       <body className="">{children}</body>
     </html>
   );
