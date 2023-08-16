@@ -5,8 +5,6 @@ import forest2 from "../../../public/images/forest2.jpg"
 import Image from "next/image"
 import React, { ReactNode, useState, useEffect } from "react";
 
-
-
 export const AboutSection = ({colorTheme}) => {
   return (
     <div className="md:h-96 h-64 w-screen relative align-middle " id="about">

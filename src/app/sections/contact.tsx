@@ -4,8 +4,6 @@ import ContactForm from "@/components/ContactForm";
 
 const Contact: React.FC = () => {
   const handleSubmit = (formData: any) => {
-    // Handle form submission here
-    console.log(formData);
   };
 
   return (

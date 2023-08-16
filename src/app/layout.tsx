@@ -1,5 +1,6 @@
 'use client'
 import './globals.css'
+import type { Metadata } from 'next'
 import React, { ReactNode } from "react";
 import Head from 'next/head'
 
@@ -7,9 +8,6 @@ import Head from 'next/head'
 interface LayoutProps {
   children: ReactNode;
 }
-
-
-
 
 const Layout = ({ children }: LayoutProps) => {
 

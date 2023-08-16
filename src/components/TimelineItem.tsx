@@ -20,7 +20,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   const flexDirection = reverse ? "flex-row" : "flex-row-reverse";
   const isMobileAppImg = title === "AO Solutions Oy"
 
-  console.log(isMobileAppImg)
   return (
     <div className={` rounded-lg relative md:flex md:items-center mb-1 ${flexDirection} md:h-96`}>
       <div className={`md:w-1/2 mx-4 md:items-center content-between pt-3 gap-8 md:px-5`}>
