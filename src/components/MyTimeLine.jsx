@@ -11,14 +11,14 @@ const MyTimeline = () => {
       <h2 className="text-center text-4xl mb-6 mt-2">Experience</h2>
       <TimelineItem
         title="Hot Rad TV"
-        description="At Hot Rad TV (a heavy music livestreaming site) I had the role of a Full Stack Developer, taking on the responsibility of overhauling the site's UI, creating checkout flows and more. At Hot Rad I learned how to manage all the systems pertaining to a larger project and independently solve challenges, be it on the front- or the backend."
+        description="At Hot Rad TV (a heavy music live streaming site) I had the role of a Full Stack Developer, taking on the responsibility of overhauling the site's UI, creating checkout flows and more. I learned how to manage all the systems pertaining to a larger project and independently solve challenges, be it on the front- or the backend."
         image={hotrad}
         duration="2022 Q2 - 2023 Q2"
         reverse={true}
       />
       <TimelineItem
         title="BLUF VPN"
-        description="At BLUF VPN, one of my main tasks was to create a React-based admin dashboard for user management. In addition to more frontend experience, this project allowed me to learn the basics of backend development as I needed to create new endpoints utilizing NodeJS, GraphQL and PostgreSQL. I also got very used to working in a team which embraced agile workflows."
+        description="At BLUF VPN one of my main tasks was to create a React-based admin dashboard for user management. In addition to more frontend experience, this project allowed me to learn the basics of backend development as I needed to create new endpoints utilizing NodeJS, GraphQL and PostgreSQL. I also got accustomed to working in a team embracing agile workflows."
         image={blufvpn2}
         duration="2021 Q2 - 2022 Q2"
         reverse={false}

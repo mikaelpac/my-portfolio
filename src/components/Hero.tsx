@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import hotrad from './../../public/images/hotrad.png'
 import me from './../../public/images/me.jpg'
-import Link from "next/link";
+
 
 
 

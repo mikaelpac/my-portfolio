@@ -1,8 +1,5 @@
 "use client"; // This is a client component 👈🏽
-import Link from "next/link";
 import React, { ReactNode, useState, useEffect } from "react";
-import {AiFillHome} from "react-icons/ai"
-import useDarkMode from "@/app/utils/useDarkMode";
 
 function Navigation({ colorTheme, setTheme }) {
 
@@ -19,18 +16,17 @@ function Navigation({ colorTheme, setTheme }) {
     };
   }, []);
 
-  const [backgroundtransparency, setBackgroundtransparency] = useState(0);
-  const [padding, setPadding] = useState(30);
-  const [boxShadow, setBoxShadow] = useState(0);
+  const [backgroundTransparency, setBackgroundTransparency] = useState<number>(0);
+  const [padding, setPadding] = useState<number>(30);
+  const [boxShadow, setBoxShadow] = useState<number>(0);
 
 
   useEffect(() => {
-    let backgroundtransparencyVar = clientWindowHeight / 600;
-
-    if (backgroundtransparencyVar < 1) {
-      let paddingVar = 30 - backgroundtransparencyVar * 20;
-      let boxShadowVar = backgroundtransparencyVar * 0.1;
-      setBackgroundtransparency(backgroundtransparencyVar);
+    let backgroundTransparencyVar = clientWindowHeight / 600;
+    if (backgroundTransparencyVar < 1) {
+      let paddingVar = 30 - backgroundTransparencyVar * 20;
+      let boxShadowVar = backgroundTransparencyVar * 0.1;
+      setBackgroundTransparency(backgroundTransparencyVar);
       setPadding(paddingVar);
       setBoxShadow(boxShadowVar);
     }
@@ -38,14 +34,14 @@ function Navigation({ colorTheme, setTheme }) {
 
 
   return (
-    <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-sm" style={{ background: `rgba(0, 0, 0, ${backgroundtransparency})` }}>
+    <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-sm" style={{ background: `rgba(0, 0, 0, ${backgroundTransparency})` }}>
       <nav className="flex items-center justify-between text-white dark:text-white lg:pl-8 md:pr-8">
         <div>
           {colorTheme === "light" ? (
             <svg
               onClick={() => setTheme("light")}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 cursor-pointer  transform transition duration-300 hover:scale-110"
+              className="h-6 w-6 cursor-pointer  transform transition duration-300 hover:scale-125"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -61,7 +57,7 @@ function Navigation({ colorTheme, setTheme }) {
             <svg
               onClick={() => setTheme("dark")}
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 cursor-pointer  transform transition duration-300 hover:scale-110"
+              className="h-6 w-6 cursor-pointer  transform transition duration-300 hover:scale-125"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -78,7 +74,7 @@ function Navigation({ colorTheme, setTheme }) {
         <ul className="flex items-center space-x-4">
           <li>
             <a href="#about">
-              <button className="hover:text-yellow-500 ml-5 mr-3 select-none">About</button>
+              <button className="md:hover:text-yellow-500 ml-5 mr-3 select-none">About</button>
             </a>
           </li>
           <li>
