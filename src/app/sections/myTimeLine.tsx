@@ -1,13 +1,14 @@
-import TimelineItem from "./TimelineItem";
-import hotrad from './../../public/images/hotrad.png'
-import blufvpn2 from './../../public/images/blufvpn2.png'
-import appscreen from './../../public/images/appscreen.png'
+import TimelineItem from "../../components/TimelineItem";
+import hotrad from './../../../public/images/hotrad.png'
+import blufvpn2 from './../../../public/images/blufvpn2.png'
+import appscreen from './../../../public/images/appscreen.png'
+import Projects from "./../../components/Projects"
 
 
-const MyTimeline = () => {
+export const MyTimeline = () => {
   return (
     <div className="bg-white dark:bg-slate-950 text-black dark:text-white py-4 px-2  md:p-10 mx-auto" id="experience" >
-      <div className="max-w-5xl m-auto  rounded-md">
+      <div className="max-w-5xl m-auto">
       <h2 className="text-center text-4xl mb-6 mt-2">Experience</h2>
       <TimelineItem
         title="Hot Rad TV"
@@ -31,6 +32,7 @@ const MyTimeline = () => {
         reverse={true}
       />
     </div>
+    <Projects/>
     </div>
   );
 };

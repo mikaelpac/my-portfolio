@@ -2,7 +2,7 @@ import sunset2 from "../../../public/images/sunset2.jpg"
 import forest2 from "../../../public/images/forest2.jpg"
 import Image from "next/image"
 
-export const AboutSection = ({colorTheme}) => {
+export const About = ({colorTheme}) => {
   return (
     <div className="md:h-96 h-64 w-screen relative align-middle " id="about">
       <Image src={colorTheme === "light" ? sunset2 : forest2} alt="Sunset" className="md:h-96 h-64 object-cover dark:object-center"/>
@@ -14,3 +14,5 @@ export const AboutSection = ({colorTheme}) => {
   </div>
   );
 };
+
+export default About;

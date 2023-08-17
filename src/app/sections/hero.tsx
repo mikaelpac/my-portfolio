@@ -1,12 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import me from './../../public/images/me.jpg'
+import me from './../../../public/images/me.jpg'
 
-
-
-
-
-const HeroNav = () => {
+const Hero = () => {
   return (
 <section className="bg-scroll bg-gradient-to-br from-indigo-500 to-blue-500 dark:bg-gradient-to-br dark:from-slate-950 dark:to-indigo-950" id="hero" style={{marginTop: "-80px"}} >
 	<div className="container flex min-h-screen flex-col justify-center md:px-8 px-4 md:py-16 mx-auto sm:py-18 lg:py-32 lg:flex-row lg:justify-between items-center max-w-6xl">
@@ -37,5 +33,5 @@ const HeroNav = () => {
   );
 };
 
-export default HeroNav;
+export default Hero;
 
