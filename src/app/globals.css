@@ -21,6 +21,10 @@ section, div {
   scroll-margin-top: 3.5em;
 }
 
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
+
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */

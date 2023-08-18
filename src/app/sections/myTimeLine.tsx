@@ -2,14 +2,13 @@ import TimelineItem from "../../components/TimelineItem";
 import hotrad from './../../../public/images/hotrad.png'
 import blufvpn2 from './../../../public/images/blufvpn2.png'
 import appscreen from './../../../public/images/appscreen.png'
-import Projects from "./../../components/Projects"
 
 
-export const MyTimeline = () => {
+const MyTimeline = () => {
   return (
-    <div className="bg-white dark:bg-slate-950 text-black dark:text-white py-4 px-2  md:p-10 mx-auto" id="experience" >
+    <div className="bg-white dark:bg-slate-950 text-black dark:text-white py-2 px-2  md:px-6 mx-auto" id="experience" >
       <div className="max-w-5xl m-auto">
-      <h2 className="text-center text-4xl mb-6 mt-2">Experience</h2>
+      <h2 className="text-center text-4xl mb-6 mt-4">Experience</h2>
       <TimelineItem
         title="Hot Rad TV"
         description="At Hot Rad TV (a heavy music live streaming site) I had the role of a Full Stack Developer, taking on the responsibility of overhauling the site's UI, creating checkout flows and more. I learned how to manage all the systems pertaining to a larger project and independently solve challenges, be it on the front- or the backend."
@@ -32,7 +31,6 @@ export const MyTimeline = () => {
         reverse={true}
       />
     </div>
-    <Projects/>
     </div>
   );
 };
