@@ -14,10 +14,10 @@ const Projects = () => {
   }
 
   return (
-    <div className="bg-white dark:bg-slate-950 text-black dark:text-white py-4 px-2 md:pb-6 md:px-10 mx-auto" id="projects" >
+    <div className="bg-white dark:bg-slate-950 text-black dark:text-white py-4 md:px-6 px-2 md:pb-6 mx-auto" id="projects" >
           <h2 className="text-center text-4xl mb-6">Projects</h2>
           <div className="h-auto grid place-items-center">
-            <div className="px-4 md:px-8 max-w-5xl">
+            <div className="px-4 md:px-8 max-w-3xl">
             {projectsData.map((project, index) => (
               <ProjectItem 
               index={index}
@@ -28,7 +28,9 @@ const Projects = () => {
               workPlace={project.workPlace}
               technology={project.technology}
               secondaryTechnology={project.secondaryTechnology}
-              description={project.description}/>
+              description={project.description}
+              colorCode={project.colorCode}
+              />
               ))}
             </div>
           </div>
