@@ -19,6 +19,15 @@ const projectsData: Project[] = [
 
     },
     {
+        title: "Ticket and merch checkout",
+        workPlace: "Hot Rad TV",
+        technology: "Frontend",
+        secondaryTechnology: "Backend",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio elit, rutrum eget tempor eget, lobortis vel ligula. Curabitur pellentesque ut eros id ultrices. Integer eu lorem vitae quam viverra luctus. In hac habitasse platea dictumst.",
+        colorCode: "#dc2626",
+
+    },
+    {
         title: "Admin dashboard",
         workPlace: "BLUF VPN",
         technology: "Frontend",
@@ -34,15 +43,6 @@ const projectsData: Project[] = [
         secondaryTechnology: null,
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio elit, rutrum eget tempor eget, lobortis vel ligula. Curabitur pellentesque ut eros id ultrices. Integer eu lorem vitae quam viverra luctus. In hac habitasse platea dictumst.",
         colorCode: "#eab308",
-
-    },
-    {
-        title: "Ticket and merch checkout",
-        workPlace: "Hot Rad TV",
-        technology: "Frontend",
-        secondaryTechnology: "Backend",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum odio elit, rutrum eget tempor eget, lobortis vel ligula. Curabitur pellentesque ut eros id ultrices. Integer eu lorem vitae quam viverra luctus. In hac habitasse platea dictumst.",
-        colorCode: "#ef4444",
 
     },
     {
