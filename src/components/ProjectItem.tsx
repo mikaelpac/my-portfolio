@@ -38,9 +38,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
       <div className={`bg-slate-200 dark:bg-slate-300 py-[12px] px-[18px] shadow-md dark:shadow-none flex justify-between rounded-md  items-center cursor-pointer ${open ? "rounded-b-none" : ""}`} onClick={handleClick}>
         <div className="w-full">
           <p className="md:text-2xl text-xl text-gray-800 font-semibold select-none">{title}</p>
-          <p className={`text-sm mt-2 font-normal select-none text-center px-3 py-2 rounded-md  inline-block text-white `} style={{backgroundColor: colorCode}}>{workPlace}</p>
-          <p className={` ml-2 text-sm mt-2 font-semibold select-none text-center px-2 py-2 rounded-md border-solid border-black  border-[1px] inline-block text-black `}>{technology}</p>
-          {secondaryTechnology && <p className={` ml-2 text-sm  mt-2 font-semibold select-none text-center px-2 py-2 rounded-md border-solid border-black  border-[1px] inline-block text-black`}>{secondaryTechnology}</p>}
+          <p className={`text-xs md:text-sm mt-2 font-normal select-none text-center px-2 py-2 md:px-3 rounded-md  inline-block text-white `} style={{backgroundColor: colorCode}}>{workPlace}</p>
+          <p className={` ml-2 text-xs md:text-sm mt-2 font-semibold select-none text-center px-2 md:px-3 py-2 rounded-md border-solid border-black  border-[1px] inline-block text-black `}>{technology}</p>
+          {secondaryTechnology && <p className={` ml-2 text-xs md:text-sm  mt-2 font-semibold select-none text-center px-2 md:px-3 py-2 rounded-md border-solid border-black  border-[1px] inline-block text-black`}>{secondaryTechnology}</p>}
           </div>
         <div className="text-[30px]">
           {open ? <AiOutlineMinus className="fill-gray-900"/> : <AiOutlinePlus className="fill-gray-900"/>}

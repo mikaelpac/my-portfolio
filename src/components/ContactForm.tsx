@@ -55,12 +55,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full px-3 py-2 border dark:bg-slate-200 text-black rounded-md focus:outline-none focus:ring focus:border-blue-300"
           required
         />
       </div>
       <div className="mb-4">
-        <label htmlFor="email" className="block my-3 font-semibold">
+        <label htmlFor="email" className=" block my-3 font-semibold">
           Email
         </label>
         <input
@@ -69,7 +69,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-3 py-2 border text-black rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full px-3 py-2 border dark:bg-slate-200 text-black rounded-md focus:outline-none focus:ring focus:border-blue-300"
           required
         />
          <ValidationError 
@@ -87,7 +87,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-3 py-2 border text-black rounded-md resize-none focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full px-3 py-2 border dark:bg-slate-200 text-black rounded-md resize-none focus:outline-none focus:ring focus:border-blue-300"
           rows={6}
           required
         />
@@ -100,7 +100,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
       <button
         type="submit"
         disabled={state.submitting}
-        className="w-full py-2 text-black font-bold  bg-yellow-500 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        className="w-full py-2 text-black font-bold   bg-yellow-500 rounded-md focus:outline-none focus:ring focus:border-blue-300"
       >
         Send
       </button>
