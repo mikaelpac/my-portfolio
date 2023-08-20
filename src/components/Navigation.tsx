@@ -47,7 +47,7 @@ function Navigation({ colorTheme, setTheme }) {
               stroke="currentColor"
             >
               <path
-                className="bulb "
+                className="icon-fill"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
@@ -63,7 +63,7 @@ function Navigation({ colorTheme, setTheme }) {
               stroke="currentColor"
             >
               <path
-                className="moon"
+                className="icon-fill"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}

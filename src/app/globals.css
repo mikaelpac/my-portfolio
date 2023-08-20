@@ -8,12 +8,10 @@
   }
 }
 
-.bulb:hover {
-  fill: #EBC815
-}
-
-.moon:hover {
-  fill: #EBC815
+.icon-fill:hover {
+  @media screen and (min-width: 650px) {
+    fill: #EBC815
+  }
 }
 
 /* This is needed because sticky nav goes on top of content in anchor links */
@@ -24,7 +22,6 @@ section, div {
 .ReactCollapse--collapse {
   transition: height 400ms;
 }
-
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
