@@ -26,6 +26,8 @@ const Hero = () => {
           src={me}
           alt="A Photo of me"
           className="w-auto rounded-md shadow-2xl"
+		  priority={true}
+		  width={500}
         />
 		</div>
 	</div>

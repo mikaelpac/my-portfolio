@@ -15,7 +15,7 @@ const projectsData: Project[] = [
         workPlace: "Personal project",
         technology: "Backend",
         secondaryTechnology: "Typescript",
-        description: "A simple URL shortening learning project built using Koa.js, Knex, Postgres, TS & NodeJS. Includes JWT-based user authentication, middleware and error handling.",
+        description: "A simple URL shortener learning project built using Koa.js, Knex, Postgres, TS & NodeJS. Includes JWT-based user authentication, middleware and error handling.",
         colorCode: "black",
         link: "https://github.com/mikaelpac/url_shortener_project"
 
