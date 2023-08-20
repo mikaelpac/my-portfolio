@@ -44,7 +44,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
   };
 
   return (
-    <form  onSubmit={handleSubmit} className="w-full md:p-6 mx-6 max-w-xl p-4 rounded-lg dark:text-white bg-slate-100 dark:bg-slate-950  file:rounded-lg shadow-md">
+    <form  onSubmit={handleSubmit} className="w-full md:p-6 mx-4 max-w-xl p-5 rounded-md dark:text-white bg-slate-100 dark:bg-slate-950  file:rounded-lg shadow-md">
       <div className="">
         <label htmlFor="topic" className="block mb-2 font-semibold ">
             Name

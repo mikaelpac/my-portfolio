@@ -1,1 +1,1 @@
-This is a portfolio site showcasing my work experience
+This is a portfolio site showcasing my work experience. This site was made using Nextjs, Typescript, and styled using tailwindcss.

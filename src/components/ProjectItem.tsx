@@ -51,7 +51,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         </div>
       </div>
       <Collapse isOpened={open}>
-        <div className={`bg-slate-200 flex items-end dark:bg-slate-300 md:px-[20px] px-[12px] pb-[20px] rounded-md text-gray-800 ${open ? "rounded-t-none" : ""}`}>
+        <div className={`bg-slate-200 flex items-end dark:bg-slate-300 md:px-[20px] px-[12px] pb-[20px] rounded-sm text-gray-800 ${open ? "rounded-t-none" : ""}`}>
         <p>{description}</p>
         {link &&
         <Link href={link} className="mr-1" rel="noopener noreferrer" target="_blank">
