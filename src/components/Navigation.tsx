@@ -35,8 +35,8 @@ function Navigation({ colorTheme, setTheme }) {
 
   return (
     <div className="sticky p-4 px-6 md:px-20 top-0 z-10 backdrop-blur-sm" style={{ background: `rgba(0, 0, 0, ${backgroundTransparency})` }}>
-      <nav className="flex items-center justify-between text-white dark:text-white lg:pl-8 md:pr-8">
-        <div>
+      <nav className="flex items-center max-w-7xl m-auto justify-between text-white dark:text-white">
+        <div className="select-none">
           {colorTheme === "light" ? (
             <svg
               onClick={() => setTheme("light")}

@@ -24,7 +24,7 @@ const projectsData: Project[] = [
         title: "UI overhaul",
         workPlace: "Hot Rad TV",
         technology: "Frontend",
-        secondaryTechnology: null,
+        secondaryTechnology: "React",
         description: "Remade most of the site's UI according to provided Figma designs.",
         colorCode: "#dc2626",
         link: null
@@ -35,8 +35,18 @@ const projectsData: Project[] = [
         workPlace: "Hot Rad TV",
         technology: "Frontend",
         secondaryTechnology: "Backend",
-        description: "Implemented a custom Stripe-based checkout flow, allowing customers to purchase live stream tickets and show merchandise. Validation of orders and data in the backend.",
+        description: "Implemented a custom Stripe-based checkout flow on the frontend using React, allowing customers to purchase live stream tickets and show merchandise. Built validation of orders and data on the backend and used PostgreSQL tables to store relevant data.",
         colorCode: "#dc2626",
+        link: null
+
+    },
+    {
+        title: "Rate limiting endpoints",
+        workPlace: "BLUF VPN",
+        technology: "Backend",
+        secondaryTechnology: "Node.js",
+        description: "Used a combination of Redis and IP addresses to build a rate limiting solution for a GraphQL API to protect against malicious behavior.",
+        colorCode: "#eab308",
         link: null
 
     },
@@ -45,7 +55,7 @@ const projectsData: Project[] = [
         workPlace: "BLUF VPN",
         technology: "Frontend",
         secondaryTechnology: "Backend",
-        description: "Built a React-based admin dashboard for managing users -  implementing the UI according to Figma designs made by coworkers. Learned how to paginate users efficiently with GraphQL endpoints.",
+        description: "Built a React-based admin dashboard for managing users -  implementing the UI according to Figma designs made by coworkers. Learned how to paginate users efficiently using a GraphQL API.",
         colorCode: "#eab308",
         link: null
 
