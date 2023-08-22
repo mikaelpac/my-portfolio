@@ -6,7 +6,7 @@ interface Project {
     secondaryTechnology: string;
     description: string;
     colorCode: string;
-    link: string;
+    link: string | null;
 }
 
 const projectsData: Project[] = [
@@ -25,7 +25,7 @@ const projectsData: Project[] = [
         workPlace: "Hot Rad TV",
         technology: "Frontend",
         secondaryTechnology: "React",
-        description: "Remade most of the site's UI according to provided Figma designs.",
+        description: "Remade a large portion of the site's UI according to provided Figma designs.",
         colorCode: "#dc2626",
         link: null
 
@@ -41,7 +41,7 @@ const projectsData: Project[] = [
 
     },
     {
-        title: "Rate limiting endpoints",
+        title: "Rate limiting API",
         workPlace: "BLUF VPN",
         technology: "Backend",
         secondaryTechnology: "Node.js",

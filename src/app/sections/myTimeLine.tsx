@@ -25,7 +25,7 @@ const MyTimeline = () => {
       />
         <TimelineItem
         title="AO Solutions Oy"
-        description="At AO Solutions Oy, I completed my work practice and was from the get-go given the responsibility of creating a Flutter-based mobile app MVP, which taught me all the fundamentals of front-end development. I had the chance to design and implement the UI myself, fetching and displaying data from endpoints created by my co-worker."
+        description="At AO Solutions Oy, I completed my internship and was from the get-go given the responsibility of creating a Flutter-based mobile app MVP, which taught me all the fundamentals of front-end development. I had the chance to design and implement the UI myself, fetching and displaying data from endpoints created by my co-worker."
         image={appscreen}
         duration="2020 Q2 - 2020 Q4"
         reverse={true}
