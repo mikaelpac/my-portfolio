@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import me from './../../../public/images/me.jpg'
+import mikaelpro from './../../../public/images/mikaelpro.png'
+import myself from './../../../public/images/myself.jpg'
 
 const Hero = () => {
   return (
 <section className="bg-scroll bg-gradient-to-br from-indigo-500 to-blue-500 dark:bg-gradient-to-br dark:from-slate-950 dark:to-indigo-950" id="hero" style={{marginTop: "-80px"}} >
-	<div className="container flex min-h-screen flex-col justify-center md:px-8 px-4 md:py-16 mx-auto sm:py-18 lg:py-32 lg:flex-row lg:justify-between items-center max-w-6xl">
-		<div className="flex flex-col justify-center md:p-6 px-0 py-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-			<h1 className="text-3xl text-white dark:text-white font-bold leading sm:text-4xl">Hey <span className="wave">👋</span> <br/>  I&apos;m Mikael, <br/>
+	<div className="flex lg:flex-row flex-col lg:items-center items-center justify-center lg:justify-center m-auto h-screen lg:pt-12 md:pt-40 pt-48">
+		<div className="lg:w-1/3  text-center lg:max-w-xl max-w-4xl lg:text-left items-center lg:my-0 mb-12">
+		<h1 className="text-3xl text-white dark:text-white font-bold leading sm:text-4xl">Hey <span className="wave">👋</span> <br/>  I&apos;m Mikael, <br/>
 				<span className="text-yellow-500">a Full Stack Developer</span>
 			</h1>
 			<h1 className="text-3xl text-white dark:text-white font-bold leading sm:text-4xl mb-4">living in Tampere</h1>
@@ -21,19 +22,24 @@ const Hero = () => {
 				</a>
 			</div>
 		</div>
-		<div className="flex md:items-center rounded-sm justify-center max-w-sm mt-12 md:mt-0 ">
-    <Image
-          src={me}
-          alt="A Photo of me"
-          className="w-auto rounded-md shadow-2xl"
-		  priority={true}
-		  width={500}
-        />
-		</div>
+		<div className="">
+		<Image
+				src={mikaelpro}
+				alt="A Photo of me"
+				className="lg:max-w-2xl md:max-w-md max-w-sm"
+				priority={true}
+				width={500}
+				/>
+		</div>	
+
 	</div>
 </section>
   );
 };
+
+<div className="flex flex-col justify-center md:p-6 px-0 text-center rounded-sm lg:max-w-xl max-w-4xl lg:text-left">
+		
+		</div>
 
 export default Hero;
 
