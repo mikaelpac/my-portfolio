@@ -6,7 +6,7 @@ import myself from './../../../public/images/myself.jpg'
 const Hero = () => {
   return (
 <section className="bg-scroll bg-gradient-to-br from-indigo-500 to-blue-500 dark:bg-gradient-to-br dark:from-slate-950 dark:to-indigo-950 overflow-hidden" id="hero" style={{marginTop: "-80px"}} >
-	<div className="flex lg:flex-row flex-col lg:items-center items-center justify-center lg:justify-center m-auto h-screen lg:pt-12 md:pt-40 pt-48">
+	<div className="flex lg:flex-row flex-col lg:items-center items-center justify-center lg:justify-center m-auto md:h-screen lg:pt-12 md:pt-40 pt-28">
 		<div className="lg:w-1/3  text-center lg:max-w-xl max-w-4xl lg:text-left items-center lg:my-0 mb-12">
 		<h1 className="text-3xl text-white dark:text-white font-bold leading sm:text-4xl">Hey <span className="wave">👋</span> <br/>  I&apos;m Mikael, <br/>
 				<span className="text-yellow-500">a Full Stack Developer</span>
@@ -26,7 +26,7 @@ const Hero = () => {
 		<Image
 				src={mikaelpro}
 				alt="A Photo of me"
-				className="lg:max-w-2xl md:max-w-md max-w-sm relative lg:left-0 left-12 overflow-hidden"
+				className="lg:max-w-2xl md:max-w-md max-w-xs relative lg:left-0 left-12 overflow-hidden"
 				priority={true}
 				width={500}
 				/>
