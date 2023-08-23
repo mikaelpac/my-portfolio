@@ -1,6 +1,7 @@
 
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface TimelineItemProps {
   title: string;
@@ -8,6 +9,7 @@ interface TimelineItemProps {
   image: StaticImageData;
   duration: string;
   reverse: boolean;
+  link: string | null;
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({
@@ -16,6 +18,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   image,
   duration,
   reverse,
+  link
 }) => {
   const flexDirection = reverse ? "flex-row" : "flex-row-reverse";
   const isMobileAppImg = title === "AO Solutions Oy"
@@ -24,7 +27,11 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
     <div className={` rounded-lg relative md:flex md:items-center mb-1 ${flexDirection} md:h-96`}>
       <div className={`md:w-1/2 mx-4 md:items-center content-between pt-3 gap-8 md:px-5`}>
         <h2 className={`text-2xl md:text-3xl text-yellow-500 dark:text-yellow-400 font-bold`}>{duration}</h2>
-        <h3 className="text-xl md:text-3xl font-bold md:font-normal text-black dark:text-white  mb-2">{title}</h3>
+      {link ?
+          <Link href={link} rel="noopener noreferrer" target="_blank">
+            <h3 className="text-xl md:text-3xl font-bold md:font-normal underline text-black dark:text-white  mb-2">{title}</h3>
+          </Link>
+             : <h3 className="text-xl md:text-3xl font-bold md:font-normal text-black dark:text-white  mb-2">{title}</h3> }
         <p className="text-lg text-black dark:text-slate-300 mb-4">{description}</p>
       </div>
       <div className={`md:w-1/2 md:max-h-80 flex md:px-5 px-4 justify-start ${reverse ? "" : ""} ${isMobileAppImg ? "max-h-80" : ""}`}>

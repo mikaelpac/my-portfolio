@@ -3,7 +3,7 @@ interface Project {
     title: string;
     workPlace: string;
     technology: string;
-    secondaryTechnology: string;
+    secondaryTechnology: string | null;
     description: string;
     colorCode: string;
     link: string | null;

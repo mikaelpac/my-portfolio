@@ -15,6 +15,7 @@ const MyTimeline = () => {
         image={hotrad}
         duration="2022 Q2 - 2023 Q2"
         reverse={true}
+        link="https://www.hotrad.tv"
       />
       <TimelineItem
         title="BLUF VPN"
@@ -22,6 +23,8 @@ const MyTimeline = () => {
         image={blufvpn2}
         duration="2021 Q2 - 2022 Q2"
         reverse={false}
+        link="https://blufvpn.com"
+     
       />
         <TimelineItem
         title="AO Solutions Oy"
@@ -29,6 +32,7 @@ const MyTimeline = () => {
         image={appscreen}
         duration="2020 Q2 - 2020 Q4"
         reverse={true}
+        link={null}
       />
     </div>
     </div>
