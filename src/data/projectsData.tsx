@@ -65,7 +65,7 @@ const projectsData: Project[] = [
         workPlace: "BLUF VPN",
         technology: "Frontend",
         secondaryTechnology: "Backend",
-        description: "Built a React-based admin dashboard for managing users -  implementing the UI according to Figma designs made by coworkers. Learned how to paginate users efficiently using a GraphQL API.",
+        description: "Built a React-based admin dashboard for managing users - implementing the UI according to Figma designs made by coworkers. Learned how to paginate users efficiently using a GraphQL API.",
         colorCode: "#eab308",
         link: null
 

@@ -4,7 +4,7 @@ import React from "react";
 import { Collapse } from "react-collapse"
 import {AiOutlineMinus} from "react-icons/ai"
 import {AiOutlinePlus} from "react-icons/ai"
-import {BsLink} from "react-icons/bs"
+import {BiLinkExternal} from "react-icons/bi"
 
 interface ProjectItemProps {
   index: number; // Add index prop to ProjectItemProps
@@ -55,7 +55,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
         <p>{description}</p>
         {link &&
         <Link href={link} className="mr-1" rel="noopener noreferrer" target="_blank">
-            <BsLink size={24}/>
+            <BiLinkExternal size={24}/>
           </Link>}
         </div>
     
