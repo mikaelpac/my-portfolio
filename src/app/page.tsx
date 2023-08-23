@@ -10,7 +10,7 @@ import Footer from "./../components/Footer"
 import Projects from "./sections/projects";
 
 export default function Home() {
-  const [mount, setMount]= useState(false)
+  const [mount, setMount]= useState<boolean>(false)
   const [colorTheme, setTheme] = useDarkMode();
 
   useEffect(() => {

@@ -31,7 +31,17 @@ const projectsData: Project[] = [
 
     },
     {
-        title: "Ticket and merch checkout",
+        title: "Onboarding a new developer",
+        workPlace: "Hot Rad TV",
+        technology: "Devops",
+        secondaryTechnology: null,
+        description: "Helped a new developer get up on their feet and familiar with the company's tech stack, which included tools and services such as Heroku, Netlify, Auth0 and Gitlab.",
+        colorCode: "#dc2626",
+        link: null
+
+    },
+    {
+        title: "Custom purchase / checkout flow",
         workPlace: "Hot Rad TV",
         technology: "Frontend",
         secondaryTechnology: "Backend",

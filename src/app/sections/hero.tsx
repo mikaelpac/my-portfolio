@@ -6,7 +6,7 @@ import myself from './../../../public/images/myself.jpg'
 const Hero = () => {
   return (
 <section className="bg-scroll bg-gradient-to-br from-indigo-500 to-blue-500 dark:bg-gradient-to-br dark:from-slate-950 dark:to-indigo-950 overflow-hidden" id="hero" style={{marginTop: "-80px"}} >
-	<div className="flex md:flex-row flex-col items-center justify-center md:justify-center m-auto md:h-screen pt-28 md:pt-14">
+	<div className="flex md:flex-row flex-col items-center justify-center md:justify-center md:h-screen pt-28 md:pt-14">
 		<div className="md:w-1/3  text-center md:max-w-xl max-w-4xl md:text-left items-center mb-12">
 		<h1 className="text-3xl text-white dark:text-white font-bold leading sm:text-4xl">Hey <span className="wave">👋</span> <br/>  I&apos;m Mikael, <br/>
 				<span className="text-yellow-500">a Full Stack Developer</span>
