@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useForm, ValidationError } from '@formspree/react';
-import toast, { Toaster } from 'react-hot-toast';
+import { useForm, ValidationError } from "@formspree/react";
+import toast, { Toaster } from "react-hot-toast";
 
 interface ContactFormProps {
   onSubmit: (data: ContactFormData) => void;
@@ -13,24 +13,23 @@ interface ContactFormData {
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
-    const [state, handleSubmit] = useForm("mbjvgybz");
+  const [state, handleSubmit] = useForm("mbjvgybz");
 
- useEffect(() => {
-      if(state.succeeded) {
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        })
-        notifySuccess()
-      }
-      if(!state.succeeded && state.errors) notifyError()
-   }, [state.succeeded, state.errors])
-
+  useEffect(() => {
+    if (state.succeeded) {
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+      notifySuccess();
+    }
+    if (!state.succeeded && state.errors) notifyError();
+  }, [state.succeeded, state.errors]);
 
   //TODO: Could get a more accurate error message from state.errors obj
-  const notifySuccess = () => toast('✅ Message sent');
-  const notifyError = () => toast('❌ Something went wrong');
+  const notifySuccess = () => toast("✅ Message sent");
+  const notifyError = () => toast("❌ Something went wrong");
 
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
@@ -38,16 +37,21 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
   return (
-    <form  onSubmit={handleSubmit} className="w-full md:p-6 mx-4 max-w-xl p-5 rounded-md dark:text-white bg-slate-100 dark:bg-slate-950  file:rounded-lg shadow-md">
+    <form
+      onSubmit={handleSubmit}
+      className="w-full md:p-6 mx-4 max-w-xl p-5 rounded-md dark:text-white bg-slate-100 dark:bg-slate-950  file:rounded-lg shadow-md"
+    >
       <div className="">
         <label htmlFor="topic" className="block mb-2 font-semibold ">
-            Name
+          Name
         </label>
         <input
           type="text"
@@ -72,11 +76,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           className="w-full px-3 py-2 border dark:bg-slate-200 text-black rounded-md focus:outline-none focus:ring focus:border-blue-300"
           required
         />
-         <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
       <div className="mb-4">
         <label htmlFor="message" className="block mb-2 font-semibold ">
@@ -91,11 +91,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit }) => {
           rows={6}
           required
         />
-          <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
       </div>
       <button
         type="submit"
