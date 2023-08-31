@@ -23,7 +23,7 @@ const MyTimeline = () => {
           title="BLUF VPN"
           description="At BLUF VPN one of my main tasks was to create a React-based admin dashboard for user management. In addition to more frontend experience, this project allowed me to learn the basics of backend development as I needed to create new endpoints utilizing NodeJS, GraphQL and PostgreSQL. I also got accustomed to working in a team embracing agile workflows."
           image={blufvpn2}
-          duration="2021 Q2 - 2022 Q2"
+          duration="2021 Q3 - 2022 Q2"
           reverse={false}
           link="https://blufvpn.com"
         />
